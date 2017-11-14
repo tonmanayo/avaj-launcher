@@ -1,10 +1,10 @@
 package wtc.avajLauncher.simulator.vehicles;
 
-import wtc.avajLauncher.simulator.WeatherTower;
+
 import wtc.avajLauncher.weather.Coordinates;
 
 public class AircraftFactory {
-    public Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
+  public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
         Coordinates coordinates = new Coordinates(longitude, latitude, height);
 
         switch (type) {
